@@ -3,16 +3,12 @@
 
 Starts the Flask application
 """
+from flask import Flask
 
-from flask import Flask, jsonify
+from healthcheck import blueprint as health_check_blueprint
 
-api = Flask(__name__)
-
-
-@api.route('/', methods=['GET'])
-def health_check():
-    """Returns health information"""
-    return jsonify({
-        "message": "I'm alive and well, thank you very much for caring!"
-    })
-    
+def create_app():
+    """Creates a Flask App"""
+    app = Flask(__name__)
+    app.register_blueprint(health_check_blueprint.create_blueprint())
+    return app
