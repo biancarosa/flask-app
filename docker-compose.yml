@@ -3,10 +3,8 @@ services:
   web:
     build:
       context: .
-    command: flask run --host=0.0.0.0
+    command: gunicorn app.main:app --workers=4 --bind 0.0.0.0:5000 --reload
     volumes:
       - .:/app
     ports:
     - "5000:5000"
-    environment:
-      - FLASK_APP=app/main.py
