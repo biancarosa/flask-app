@@ -13,15 +13,10 @@ pylint = "*"
 
 [packages]
 
-click = "==6.7"
-flask = "==0.12.2"
-itsdangerous = "==0.24"
-"jinja2" = "==2.10"
-markupsafe = "==1.0"
-werkzeug = "==0.12.2"
-gunicorn = "*"
+flask = "==0.12.4"
+gunicorn = "==19.9.0"
 
 
 [requires]
 
-python_version = "3.6"
+python_version = "3.7"
