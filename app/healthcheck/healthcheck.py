@@ -1,4 +1,6 @@
-"""Deals with HealthCheck route."""
+"""app.healthcheck.healthcheck
+
+Module that deals with HealthCheck route."""
 from flask import jsonify
 
 def healthcheck():

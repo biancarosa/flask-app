@@ -1,4 +1,6 @@
-"""Deals with Blueprint-related stuff."""
+"""app.healthcheck.blueprint
+
+Module taht deals with Blueprint-related stuff."""
 from flask import Blueprint
 from app.healthcheck import healthcheck
 

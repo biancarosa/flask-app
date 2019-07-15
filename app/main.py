@@ -1,6 +1,6 @@
-"""Application.
+"""app.main
 
-Starts the Flask application
+Module that starts the Flask application
 """
 from flask import Flask
 
