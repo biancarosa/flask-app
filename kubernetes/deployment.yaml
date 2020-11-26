@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: flask-app-consumer
 spec:
-  replicas: 8
+  replicas: $(REPLICAS)
   template:
     metadata:
       labels:
@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
         - name: flask-app-consumer
-          image: FLASK_APP
+          image: $(FLASK_APP)
           envFrom:
             - configMapRef:
                 name: flask-app-consumer-env
