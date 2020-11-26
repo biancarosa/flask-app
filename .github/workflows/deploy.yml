@@ -1,9 +1,5 @@
 # Based on: https://github.com/GoogleCloudPlatform/github-actions/blob/master/example-workflows/cloud-run/.github/workflows/cloud-run.yml
 name: deploy-api
-defaults:
-  run:
-    working-directory: api
-
 on:
   push:
     branches:
@@ -12,7 +8,7 @@ on:
 env:
   PROJECT_ID: ${{ secrets.RUN_PROJECT }}
   RUN_REGION: us-central1
-  SERVICE_NAME: lastfm-last-played
+  SERVICE_NAME: flask-app
 
 jobs:
   setup-build-deploy:

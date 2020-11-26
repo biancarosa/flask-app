@@ -1,8 +1,4 @@
 name: build-api
-defaults:
-  run:
-    working-directory: api
-    
 on:
   push:
     branches: [master]
@@ -44,4 +40,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Docker build
-        run: docker build . -t personal-pass-manager
+        run: docker build . -t flask-app
