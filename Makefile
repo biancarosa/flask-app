@@ -11,8 +11,9 @@ test:
 integration-test:
 	pipenv run pytest tests/integration
 
-coverage:
-	pipenv run pytest tests/unit --doctest-modules --junitxml=junit/test-results.xml --cov=app --cov-report=xml --cov-report=html
+# TODO: Implement tests
+# coverage:
+# 	pipenv run pytest tests/unit --doctest-modules --junitxml=junit/test-results.xml --cov=app --cov-report=xml --cov-report=html
 
 lint:
 	pipenv run pylint app
