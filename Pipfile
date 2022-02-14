@@ -11,7 +11,7 @@ pytest-cov = "*"
 
 [packages]
 flask = "==2.0.3"
-gunicorn = "==20.0.4"
+gunicorn = "==20.1.0"
 
 [requires]
 python_version = "3.9"
