@@ -13,7 +13,7 @@ pylint = "*"
 
 [packages]
 
-flask = "==1.0.4"
+flask = "==1.1.4"
 gunicorn = "==20.0.4"
 
 
